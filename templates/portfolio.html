@@ -1,0 +1,19 @@
+{% include "header.html" %}
+<div class="gradient-background py-5">
+  <h1 class="display-1 py-5 fw-bold text-body-emphasis text-center">Portfolio</h1>
+</div>
+{% for project in projects %}
+<div class="px-4 py-5 text-center border-bottom blue-border border-3"><h1 class="display-4 fw-bold text-body-emphasis">{{project.title}}</h1>
+  <div class="col-lg-6 mx-auto"><p class="lead mb-4 sans-serif">{{project.short_description}}</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      <form action="{{ url_for('show_project',id=project.id) }}">
+        <button type="submit" class="btn btn-primary btn-lg px-4 me-sm-3 sans-serif">Read more</button>
+      </form>
+      <form action="{{project.github_link}}">
+        <button type="submit" class="btn btn-outline-secondary btn-lg px-4 sans-serif">Visit GitHub repository</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% include "footer.html" %}

@@ -1,0 +1,74 @@
+{% include "header.html" %}
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-5"><img
+            src="{{url_for('static', filename='img/profile_pic.jpg')}}"
+            class="d-block mx-lg-auto img-fluid prof-img"
+            alt="Bootstrap Themes" width="700" height="500" loading="lazy"></div>
+    <div class="col-lg-7"><h1 class="display-2 text-body-emphasis lh-1 mb-3">Maciej Wadas</h1>
+      <p class="lead sans-serif">Python developer</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container px-4 py-5 " id="featured-3"><h2 class="pb-2  ">Why choose me?</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 justify-content-center">
+    <div class="feature col text-center col-lg-3 mx-3">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mt-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-diamond-fill "
+             viewBox="0 0 16 17">
+          <path fill-rule="evenodd"
+                d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098z"/>
+        </svg>
+      </div>
+      <h3 class="fs-2 fw-bold">Fair</h3>
+      <p class="sans-serif">This is my most important value. The very first thing I think about when deciding what to do
+        is whether a
+        choice I want to make is fair and right regarding people who it concerns. The last thing I want to do is cut
+        corners or do something that would make somebody else end up in an unfair position.</p>
+    </div>
+    <div class="feature col text-center col-lg-3 mx-3">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mt-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-diamond-fill"
+             viewBox="0 0 16 17">
+          <path fill-rule="evenodd"
+                d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098z"/>
+        </svg>
+      </div>
+      <h3 class="fs-2 fw-bold">Thorough</h3>
+      <p class="sans-serif">Nowadays, when AI is one of the most important tools for programmers, it is important to
+        maintain your skills instead of fully relying on it. While encountering a problem I don’t refrain from using AI,
+        but I do so in a way that ensures the solution is still my own honest work.</p>
+
+    </div>
+    <div class="feature col text-center px-5 col-lg-3 mx-3 ">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mt-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-diamond-fill "
+             viewBox="0 0 16 17">
+          <path fill-rule="evenodd"
+                d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098z"/>
+        </svg>
+      </div>
+      <h3 class="fs-2 fw-bold">Professional</h3>
+      <p class="sans-serif">I don't want to simply make money. I want to contribute. I want to be reliable. I want to
+        deliver, not let
+        people down. When someone hires me, they should get what they are paying for. This is why I always do my best
+        and treat my job seriously.</p>
+
+    </div>
+  </div>
+</div>
+<div class="px-4 py-5 my-5 text-center btn-dark bg-blue03 mx-auto hero">
+  <h1 class="display-5 fw-bold text-body-emphasis">Explore my work.</h1>
+  <div class="col-lg-6 mx-auto"><p class="lead mb-4 sans-serif">Click the button below to see my projects</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <form action="{{ url_for('portfolio') }}">
+        <button type="submit" class="btn bg-blue01 btn-lg px-4 gap-3 sans-serif">Take me there!</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% include "footer.html" %}

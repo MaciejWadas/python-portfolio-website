@@ -1,0 +1,19 @@
+{% include "header.html" %}
+
+<div class="d-flex px-4 py-5 text-center border-bottom blue-border border-3 justify-content-center project_bg"
+     style="background-image: url('{{project.img_link}}');">
+  <div>
+    <h1
+            class="display-4 fw-bold text-body-emphasis">
+      {{project.title}}</h1>
+    <div class="col-lg-6 mx-auto"><p class="lead mb-4 sans-serif">{{project.short_description}}</p>
+    </div>
+  </div>
+</div>
+<div class=" col-lg-6 mx-auto d-grid sans-serif justify-content-sm-center mb-5 text-center">
+  <p>{{project.description|safe}}</p>
+  <form action="{{project.github_link}}">
+    <button type="submit" class="btn btn-outline-secondary btn-lg px-4 sans-serif">Visit GitHub repository</button>
+  </form>
+</div>
+{% include "footer.html" %}

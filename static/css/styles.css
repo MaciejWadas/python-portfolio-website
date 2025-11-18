@@ -1,0 +1,118 @@
+body {
+  background-color: #2B2E33;
+  color: #EEEEEE;
+}
+
+.bg-blue01 {
+  background-color: #EEEEEE;
+}
+
+.bg-blue02 {
+  background-color: #305C91;
+}
+
+.bg-blue03 {
+  background-color: #334A66;
+}
+
+.nav-link {
+  color: #EEEEEE;
+}
+
+.nav-link:hover {
+  color: #1F65BB;
+}
+
+.prof-img {
+  border-radius: 220px;
+  border:5px solid #334A66;
+}
+
+.prof-img:hover{
+  border-color: #EEEEEE;
+  transition: 0.25s;
+}
+
+.text-body-emphasis {
+  color: #EEEEEE !important;
+}
+
+.feature {
+  border-radius: 25px;
+  background-color: #334A66;
+}
+
+.feature:hover {
+  background-color: #EEEEEE;
+  color: #334A66 !important;
+  transition: color 0.25s, background-color 0.25s;
+}
+
+
+.hero {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #1f65bb, #305c91, #334a66);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.blue-border {
+  border-color: #334A66 !important;
+}
+
+
+.sans-serif {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: normal;
+
+}
+
+body {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+
+}
+
+.about_me_bg {
+  background-image: url("../img/about_me.jpg");
+  height: 300px;
+  width: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.project_bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  background-position: center;
+  background-color: rgba(51, 74, 102, 0.3);
+  background-blend-mode: lighten;
+}
+
+.feature-icon {
+    background: none !important;
+    background-color: transparent !important;
+}

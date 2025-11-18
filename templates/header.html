@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Maciej Wadas Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link
+          href="{{ url_for('static', filename='css/styles.css') }}"
+          rel="stylesheet"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container-flex border-bottom border-3 blue-border mb-4">
+  <header class="d-flex flex-wrap justify-content-start py-2 mx-5 ">
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link sans-serif" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="{{ url_for('portfolio') }}" class="nav-link sans-serif">Portfolio</a></li>
+      <li class="nav-item"><a href="{{ url_for('about_me') }}" class="nav-link sans-serif">About Me</a></li>
+    </ul>
+  </header>
+</div>
+</body>
+</html>
